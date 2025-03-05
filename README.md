@@ -37,6 +37,8 @@ This application can be used in either:
 1. **Terminal Mode** – a text-based console interface.  
 2. **GUI Mode** – a desktop interface built with Java Swing for a more user-friendly, visual experience.
 
+![alt text](image-1.png)
+
 ---
 
 ## Features
@@ -112,8 +114,7 @@ The project is heavily organized around OOP principles, with classes broken into
 
                                          ┌───────────┐
                                          │   Rating  │
-                                         └───────────┘
-
+                                         └───────────┘                                       
 ┌────────────────────┐                     ┌─────────────────────────────┐
 │   User (abstract)  │                     │    Staff (abstract)         │
 │  SortedSet<T> favs │                     │ extends User, StaffInterface│
