@@ -126,7 +126,7 @@ The project is heavily organized around OOP principles, with classes broken into
        │                                           │
        ▼                                           ▼
 ┌────────────────────┐                     ┌─────────────────────────────┐
-│  Regular (RequestsMgr)│                  │    Staff (abstract)         │
+│  Regular (RequestsMgr) │               │    Staff (abstract)         │
 └────────────────────┘                     │ extends User, StaffInterface│
                                            └─────────────────────────────┘
                                                   ▲               ▲
