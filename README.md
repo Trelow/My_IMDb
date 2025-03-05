@@ -16,9 +16,6 @@ Welcome to **My_IMDb**, a project designed to simulate the core functionalities 
 6. [Terminal Mode](#terminal-mode)  
 7. [Dependencies](#dependencies)  
 8. [How to Build & Run](#how-to-build--run)  
-9. [Future Improvements & Bonus Ideas](#future-improvements--bonus-ideas)  
-10. [Requirements (Originally in Romanian)](#requirements-originally-in-romanian)  
-11. [License](#license)
 
 ---
 
