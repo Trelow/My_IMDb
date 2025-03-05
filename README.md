@@ -272,10 +272,10 @@ Developed using **Java Swing**, the GUI is designed for ease of use and intuitiv
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your_username/imdb-like-application.git
-   cd imdb-like-application
+   git clone https://github.com/Trelow/My_IMDb.git
+   cd My_IMDb
    ./gradlew clean build
    ./gradle run
-
+    ```
    Select are user from request.json file to login (e.g., "username": "test", "password": "test")
 
