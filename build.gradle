@@ -1,0 +1,63 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.9.10'
+    id "io.freefair.lombok" version "8.4"
+    id 'application' // Add this line
+    //id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'org'
+version = '1.0-SNAPSHOT'
+
+
+// javafx {
+//     version = "17.0.9"
+//     modules = [ 
+//         'javafx.controls' ,
+//         'javafx.media',
+//         'javafx.swing'
+//     ]
+// }
+
+repositories {
+    mavenCentral()
+
+    maven{
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+application {
+    mainClass = 'org.imdb.Main'
+}
+
+run{
+    standardInput = System.in // Add this line
+}
+
+
+dependencies {
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.7.1'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation 'com.formdev:flatlaf:3.2.5'
+    implementation 'org.passay:passay:1.6.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
