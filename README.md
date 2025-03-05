@@ -115,16 +115,16 @@ The project is heavily organized around OOP principles, with classes broken into
                                          ┌───────────┐
                                          │   Rating  │
                                          └───────────┘                                       
-┌────────────────────┐                     ┌─────────────────────────────┐
-│   User (abstract)  │                     │    Staff (abstract)         │
-│  SortedSet<T> favs │                     │ extends User, StaffInterface│
-└────────────────────┘                     └─────────────────────────────┘
-        ▲                                               ▲               ▲
-        │                                               │               │
- ┌─────────────┐                       ┌───────────────────┐           ┌───────────────────────┐
- │  Regular    │                       │  Contributor      │           │       Admin           │
- │(RequestsMgr)│                       │(RequestsMgr)      │           └───────────────────────┘
- └─────────────┘                       └───────────────────┘
+    ┌────────────────────┐                     ┌─────────────────────────────┐
+    │   User (abstract)  │                     │    Staff (abstract)         │
+    │  SortedSet<T> favs │                     │ extends User, StaffInterface│
+    └────────────────────┘                     └─────────────────────────────┘
+        ▲                                               ▲                  ▲
+        │                                               │                  │
+    ┌─────────────┐                       ┌───────────────────┐           ┌───────────────────────┐
+    │  Regular    │                       │  Contributor      │           │       Admin           │
+    │(RequestsMgr)│                       │(RequestsMgr)      │           └───────────────────────┘
+    └─────────────┘                       └───────────────────┘
 
 
 ### Key Classes
